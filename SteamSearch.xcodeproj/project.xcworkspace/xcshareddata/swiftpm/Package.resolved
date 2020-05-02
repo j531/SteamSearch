@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Entwine",
+        "repositoryURL": "https://github.com/tcldr/Entwine",
+        "state": {
+          "branch": null,
+          "revision": "ce8de842f18a6b91795a970637d845b836c0ad92",
+          "version": "0.8.0"
+        }
+      },
+      {
+        "package": "Nuke",
+        "repositoryURL": "https://github.com/kean/Nuke",
+        "state": {
+          "branch": null,
+          "revision": "6001489d22e5f41a4956c1b6cd4cf7cbe8f44dff",
+          "version": "8.4.1"
+        }
+      },
+      {
+        "package": "SFSafeSymbols",
+        "repositoryURL": "https://github.com/piknotech/SFSafeSymbols",
+        "state": {
+          "branch": null,
+          "revision": "31a99db357f2b839a18ab598c4aa87a741bd6009",
+          "version": "1.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4298B34C245E1FF0002FF481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B319245E1FEF002FF481 /* AppDelegate.swift */; };
+		4298B34D245E1FF0002FF481 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B31A245E1FEF002FF481 /* SceneDelegate.swift */; };
+		4298B34E245E1FF0002FF481 /* SteamWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B31D245E1FEF002FF481 /* SteamWebService.swift */; };
+		4298B34F245E1FF0002FF481 /* SteamAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B31E245E1FEF002FF481 /* SteamAPI.swift */; };
+		4298B350245E1FF0002FF481 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4298B321245E1FF0002FF481 /* Localizable.strings */; };
+		4298B351245E1FF0002FF481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4298B323245E1FF0002FF481 /* Assets.xcassets */; };
+		4298B352245E1FF0002FF481 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4298B325245E1FF0002FF481 /* Preview Assets.xcassets */; };
+		4298B353245E1FF0002FF481 /* Inter.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4298B328245E1FF0002FF481 /* Inter.otf */; };
+		4298B354245E1FF0002FF481 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4298B329245E1FF0002FF481 /* LICENSE.txt */; };
+		4298B355245E1FF0002FF481 /* SteamSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B32B245E1FF0002FF481 /* SteamSearchResponse.swift */; };
+		4298B356245E1FF0002FF481 /* SteamSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B32C245E1FF0002FF481 /* SteamSearchItem.swift */; };
+		4298B357245E1FF0002FF481 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B32E245E1FF0002FF481 /* RemoteImage.swift */; };
+		4298B358245E1FF0002FF481 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B32F245E1FF0002FF481 /* ActivityIndicator.swift */; };
+		4298B359245E1FF0002FF481 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B330245E1FF0002FF481 /* SearchTextField.swift */; };
+		4298B35A245E1FF0002FF481 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B331245E1FF0002FF481 /* AppFont.swift */; };
+		4298B35B245E1FF0002FF481 /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B334245E1FF0002FF481 /* EdgeInsets+Extensions.swift */; };
+		4298B35C245E1FF0002FF481 /* AnyPublisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B335245E1FF0002FF481 /* AnyPublisher+Extensions.swift */; };
+		4298B35D245E1FF0002FF481 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B336245E1FF0002FF481 /* Binding+Extension.swift */; };
+		4298B35E245E1FF0002FF481 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B337245E1FF0002FF481 /* UIEdgeInsets+Extensions.swift */; };
+		4298B35F245E1FF0002FF481 /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B338245E1FF0002FF481 /* Publisher+Extensions.swift */; };
+		4298B360245E1FF0002FF481 /* DataTaskPublisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B339245E1FF0002FF481 /* DataTaskPublisher+Extensions.swift */; };
+		4298B361245E1FF0002FF481 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B33A245E1FF0002FF481 /* View+Extensions.swift */; };
+		4298B362245E1FF0002FF481 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B33C245E1FF0002FF481 /* ImageLoader.swift */; };
+		4298B363245E1FF0002FF481 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B33D245E1FF0002FF481 /* Localization.swift */; };
+		4298B364245E1FF0002FF481 /* ViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B33F245E1FF0002FF481 /* ViewContext.swift */; };
+		4298B365245E1FF0002FF481 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B340245E1FF0002FF481 /* ViewModel.swift */; };
+		4298B366245E1FF0002FF481 /* ViewModelStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B341245E1FF0002FF481 /* ViewModelStateMachine.swift */; };
+		4298B367245E1FF0002FF481 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B344245E1FF0002FF481 /* NetworkService.swift */; };
+		4298B368245E1FF0002FF481 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B345245E1FF0002FF481 /* NetworkError.swift */; };
+		4298B369245E1FF0002FF481 /* GameSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B348245E1FF0002FF481 /* GameSearchView.swift */; };
+		4298B36A245E1FF0002FF481 /* GameSearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B349245E1FF0002FF481 /* GameSearchBuilder.swift */; };
+		4298B36B245E1FF0002FF481 /* GameSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B34A245E1FF0002FF481 /* GameSearchViewModel.swift */; };
+		4298B36E245E211B002FF481 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 4298B36D245E211B002FF481 /* Nuke */; };
+		4298B371245E213B002FF481 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 4298B370245E213B002FF481 /* SFSafeSymbols */; };
+		4298B374245E23DA002FF481 /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = 4298B373245E23DA002FF481 /* EntwineTest */; };
+		4298B382245E245F002FF481 /* GameSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B381245E23FB002FF481 /* GameSearchViewModelTests.swift */; };
+		4298B383245E245F002FF481 /* MockSteamWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B377245E23FB002FF481 /* MockSteamWebService.swift */; };
+		4298B384245E245F002FF481 /* TestSubscriber+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B379245E23FB002FF481 /* TestSubscriber+Extensions.swift */; };
+		4298B385245E245F002FF481 /* SteamSearchItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B37B245E23FB002FF481 /* SteamSearchItem+Fixture.swift */; };
+		4298B386245E245F002FF481 /* ViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B37D245E23FB002FF481 /* ViewModelTestCase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4298B308245E1CDF002FF481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4298B2E9245E1CDB002FF481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4298B2F0245E1CDB002FF481;
+			remoteInfo = SteamSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4298B2F1245E1CDB002FF481 /* SteamSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4298B307245E1CDF002FF481 /* SteamSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteamSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4298B317245E1FEF002FF481 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4298B319245E1FEF002FF481 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4298B31A245E1FEF002FF481 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4298B31D245E1FEF002FF481 /* SteamWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamWebService.swift; sourceTree = "<group>"; };
+		4298B31E245E1FEF002FF481 /* SteamAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamAPI.swift; sourceTree = "<group>"; };
+		4298B322245E1FF0002FF481 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4298B323245E1FF0002FF481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4298B325245E1FF0002FF481 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4298B328245E1FF0002FF481 /* Inter.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.otf; sourceTree = "<group>"; };
+		4298B329245E1FF0002FF481 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4298B32B245E1FF0002FF481 /* SteamSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamSearchResponse.swift; sourceTree = "<group>"; };
+		4298B32C245E1FF0002FF481 /* SteamSearchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamSearchItem.swift; sourceTree = "<group>"; };
+		4298B32E245E1FF0002FF481 /* RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		4298B32F245E1FF0002FF481 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		4298B330245E1FF0002FF481 /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		4298B331245E1FF0002FF481 /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		4298B334245E1FF0002FF481 /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		4298B335245E1FF0002FF481 /* AnyPublisher+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+Extensions.swift"; sourceTree = "<group>"; };
+		4298B336245E1FF0002FF481 /* Binding+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
+		4298B337245E1FF0002FF481 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		4298B338245E1FF0002FF481 /* Publisher+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
+		4298B339245E1FF0002FF481 /* DataTaskPublisher+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataTaskPublisher+Extensions.swift"; sourceTree = "<group>"; };
+		4298B33A245E1FF0002FF481 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		4298B33C245E1FF0002FF481 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		4298B33D245E1FF0002FF481 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		4298B33F245E1FF0002FF481 /* ViewContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContext.swift; sourceTree = "<group>"; };
+		4298B340245E1FF0002FF481 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4298B341245E1FF0002FF481 /* ViewModelStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelStateMachine.swift; sourceTree = "<group>"; };
+		4298B344245E1FF0002FF481 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4298B345245E1FF0002FF481 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4298B348245E1FF0002FF481 /* GameSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSearchView.swift; sourceTree = "<group>"; };
+		4298B349245E1FF0002FF481 /* GameSearchBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSearchBuilder.swift; sourceTree = "<group>"; };
+		4298B34A245E1FF0002FF481 /* GameSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSearchViewModel.swift; sourceTree = "<group>"; };
+		4298B377245E23FB002FF481 /* MockSteamWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSteamWebService.swift; sourceTree = "<group>"; };
+		4298B379245E23FB002FF481 /* TestSubscriber+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestSubscriber+Extensions.swift"; sourceTree = "<group>"; };
+		4298B37B245E23FB002FF481 /* SteamSearchItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SteamSearchItem+Fixture.swift"; sourceTree = "<group>"; };
+		4298B37D245E23FB002FF481 /* ViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTestCase.swift; sourceTree = "<group>"; };
+		4298B37F245E23FB002FF481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4298B381245E23FB002FF481 /* GameSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSearchViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4298B2EE245E1CDB002FF481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4298B371245E213B002FF481 /* SFSafeSymbols in Frameworks */,
+				4298B36E245E211B002FF481 /* Nuke in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4298B304245E1CDF002FF481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4298B374245E23DA002FF481 /* EntwineTest in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4298B2E8245E1CDB002FF481 = {
+			isa = PBXGroup;
+			children = (
+				4298B2F3245E1CDB002FF481 /* SteamSearch */,
+				4298B30A245E1CDF002FF481 /* SteamSearchTests */,
+				4298B2F2245E1CDB002FF481 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4298B2F2245E1CDB002FF481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4298B2F1245E1CDB002FF481 /* SteamSearch.app */,
+				4298B307245E1CDF002FF481 /* SteamSearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4298B2F3245E1CDB002FF481 /* SteamSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4298B318245E1FEF002FF481 /* Main */,
+				4298B346245E1FF0002FF481 /* Modules */,
+				4298B32A245E1FF0002FF481 /* Models */,
+				4298B31B245E1FEF002FF481 /* Services */,
+				4298B332245E1FF0002FF481 /* Core */,
+				4298B32D245E1FF0002FF481 /* UI */,
+				4298B31F245E1FF0002FF481 /* Resources */,
+				4298B316245E1FEF002FF481 /* Supporting Files */,
+			);
+			path = SteamSearch;
+			sourceTree = "<group>";
+		};
+		4298B30A245E1CDF002FF481 /* SteamSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				4298B380245E23FB002FF481 /* Tests */,
+				4298B375245E23FB002FF481 /* Core */,
+				4298B37E245E23FB002FF481 /* Supporting Files */,
+			);
+			path = SteamSearchTests;
+			sourceTree = "<group>";
+		};
+		4298B316245E1FEF002FF481 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4298B317245E1FEF002FF481 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4298B318245E1FEF002FF481 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4298B319245E1FEF002FF481 /* AppDelegate.swift */,
+				4298B31A245E1FEF002FF481 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4298B31B245E1FEF002FF481 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4298B31C245E1FEF002FF481 /* Web */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4298B31C245E1FEF002FF481 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				4298B31D245E1FEF002FF481 /* SteamWebService.swift */,
+				4298B31E245E1FEF002FF481 /* SteamAPI.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		4298B31F245E1FF0002FF481 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4298B320245E1FF0002FF481 /* Localisation */,
+				4298B323245E1FF0002FF481 /* Assets.xcassets */,
+				4298B324245E1FF0002FF481 /* Preview Content */,
+				4298B326245E1FF0002FF481 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4298B320245E1FF0002FF481 /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				4298B321245E1FF0002FF481 /* Localizable.strings */,
+			);
+			path = Localisation;
+			sourceTree = "<group>";
+		};
+		4298B324245E1FF0002FF481 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4298B325245E1FF0002FF481 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4298B326245E1FF0002FF481 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4298B327245E1FF0002FF481 /* Inter */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4298B327245E1FF0002FF481 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				4298B328245E1FF0002FF481 /* Inter.otf */,
+				4298B329245E1FF0002FF481 /* LICENSE.txt */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		4298B32A245E1FF0002FF481 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4298B32B245E1FF0002FF481 /* SteamSearchResponse.swift */,
+				4298B32C245E1FF0002FF481 /* SteamSearchItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4298B32D245E1FF0002FF481 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4298B32E245E1FF0002FF481 /* RemoteImage.swift */,
+				4298B32F245E1FF0002FF481 /* ActivityIndicator.swift */,
+				4298B330245E1FF0002FF481 /* SearchTextField.swift */,
+				4298B331245E1FF0002FF481 /* AppFont.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4298B332245E1FF0002FF481 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4298B333245E1FF0002FF481 /* Extensions */,
+				4298B33B245E1FF0002FF481 /* Utilities */,
+				4298B33E245E1FF0002FF481 /* Architecture */,
+				4298B342245E1FF0002FF481 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4298B333245E1FF0002FF481 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4298B334245E1FF0002FF481 /* EdgeInsets+Extensions.swift */,
+				4298B335245E1FF0002FF481 /* AnyPublisher+Extensions.swift */,
+				4298B336245E1FF0002FF481 /* Binding+Extension.swift */,
+				4298B337245E1FF0002FF481 /* UIEdgeInsets+Extensions.swift */,
+				4298B338245E1FF0002FF481 /* Publisher+Extensions.swift */,
+				4298B339245E1FF0002FF481 /* DataTaskPublisher+Extensions.swift */,
+				4298B33A245E1FF0002FF481 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4298B33B245E1FF0002FF481 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4298B33C245E1FF0002FF481 /* ImageLoader.swift */,
+				4298B33D245E1FF0002FF481 /* Localization.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4298B33E245E1FF0002FF481 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				4298B33F245E1FF0002FF481 /* ViewContext.swift */,
+				4298B340245E1FF0002FF481 /* ViewModel.swift */,
+				4298B341245E1FF0002FF481 /* ViewModelStateMachine.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		4298B342245E1FF0002FF481 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4298B343245E1FF0002FF481 /* HTTP */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4298B343245E1FF0002FF481 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				4298B344245E1FF0002FF481 /* NetworkService.swift */,
+				4298B345245E1FF0002FF481 /* NetworkError.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		4298B346245E1FF0002FF481 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4298B347245E1FF0002FF481 /* GameSearch */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4298B347245E1FF0002FF481 /* GameSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4298B348245E1FF0002FF481 /* GameSearchView.swift */,
+				4298B349245E1FF0002FF481 /* GameSearchBuilder.swift */,
+				4298B34A245E1FF0002FF481 /* GameSearchViewModel.swift */,
+			);
+			path = GameSearch;
+			sourceTree = "<group>";
+		};
+		4298B375245E23FB002FF481 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4298B376245E23FB002FF481 /* Mocks */,
+				4298B378245E23FB002FF481 /* Extensions */,
+				4298B37A245E23FB002FF481 /* Fixtures */,
+				4298B37C245E23FB002FF481 /* Protocols */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4298B376245E23FB002FF481 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4298B377245E23FB002FF481 /* MockSteamWebService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4298B378245E23FB002FF481 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4298B379245E23FB002FF481 /* TestSubscriber+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4298B37A245E23FB002FF481 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				4298B37B245E23FB002FF481 /* SteamSearchItem+Fixture.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		4298B37C245E23FB002FF481 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4298B37D245E23FB002FF481 /* ViewModelTestCase.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4298B37E245E23FB002FF481 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4298B37F245E23FB002FF481 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4298B380245E23FB002FF481 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4298B381245E23FB002FF481 /* GameSearchViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4298B2F0245E1CDB002FF481 /* SteamSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4298B310245E1CDF002FF481 /* Build configuration list for PBXNativeTarget "SteamSearch" */;
+			buildPhases = (
+				4298B2ED245E1CDB002FF481 /* Sources */,
+				4298B2EE245E1CDB002FF481 /* Frameworks */,
+				4298B2EF245E1CDB002FF481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteamSearch;
+			packageProductDependencies = (
+				4298B36D245E211B002FF481 /* Nuke */,
+				4298B370245E213B002FF481 /* SFSafeSymbols */,
+			);
+			productName = SteamSearch;
+			productReference = 4298B2F1245E1CDB002FF481 /* SteamSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4298B306245E1CDF002FF481 /* SteamSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4298B313245E1CDF002FF481 /* Build configuration list for PBXNativeTarget "SteamSearchTests" */;
+			buildPhases = (
+				4298B303245E1CDF002FF481 /* Sources */,
+				4298B304245E1CDF002FF481 /* Frameworks */,
+				4298B305245E1CDF002FF481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4298B309245E1CDF002FF481 /* PBXTargetDependency */,
+			);
+			name = SteamSearchTests;
+			packageProductDependencies = (
+				4298B373245E23DA002FF481 /* EntwineTest */,
+			);
+			productName = SteamSearchTests;
+			productReference = 4298B307245E1CDF002FF481 /* SteamSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4298B2E9245E1CDB002FF481 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Joshua;
+				TargetAttributes = {
+					4298B2F0245E1CDB002FF481 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					4298B306245E1CDF002FF481 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 4298B2F0245E1CDB002FF481;
+					};
+				};
+			};
+			buildConfigurationList = 4298B2EC245E1CDB002FF481 /* Build configuration list for PBXProject "SteamSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4298B2E8245E1CDB002FF481;
+			packageReferences = (
+				4298B36C245E211B002FF481 /* XCRemoteSwiftPackageReference "Nuke" */,
+				4298B36F245E213B002FF481 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+				4298B372245E23D9002FF481 /* XCRemoteSwiftPackageReference "Entwine" */,
+			);
+			productRefGroup = 4298B2F2245E1CDB002FF481 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4298B2F0245E1CDB002FF481 /* SteamSearch */,
+				4298B306245E1CDF002FF481 /* SteamSearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4298B2EF245E1CDB002FF481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4298B354245E1FF0002FF481 /* LICENSE.txt in Resources */,
+				4298B352245E1FF0002FF481 /* Preview Assets.xcassets in Resources */,
+				4298B353245E1FF0002FF481 /* Inter.otf in Resources */,
+				4298B351245E1FF0002FF481 /* Assets.xcassets in Resources */,
+				4298B350245E1FF0002FF481 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4298B305245E1CDF002FF481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4298B2ED245E1CDB002FF481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4298B363245E1FF0002FF481 /* Localization.swift in Sources */,
+				4298B34C245E1FF0002FF481 /* AppDelegate.swift in Sources */,
+				4298B367245E1FF0002FF481 /* NetworkService.swift in Sources */,
+				4298B355245E1FF0002FF481 /* SteamSearchResponse.swift in Sources */,
+				4298B35E245E1FF0002FF481 /* UIEdgeInsets+Extensions.swift in Sources */,
+				4298B36B245E1FF0002FF481 /* GameSearchViewModel.swift in Sources */,
+				4298B364245E1FF0002FF481 /* ViewContext.swift in Sources */,
+				4298B357245E1FF0002FF481 /* RemoteImage.swift in Sources */,
+				4298B35F245E1FF0002FF481 /* Publisher+Extensions.swift in Sources */,
+				4298B34F245E1FF0002FF481 /* SteamAPI.swift in Sources */,
+				4298B36A245E1FF0002FF481 /* GameSearchBuilder.swift in Sources */,
+				4298B368245E1FF0002FF481 /* NetworkError.swift in Sources */,
+				4298B358245E1FF0002FF481 /* ActivityIndicator.swift in Sources */,
+				4298B361245E1FF0002FF481 /* View+Extensions.swift in Sources */,
+				4298B35C245E1FF0002FF481 /* AnyPublisher+Extensions.swift in Sources */,
+				4298B356245E1FF0002FF481 /* SteamSearchItem.swift in Sources */,
+				4298B35A245E1FF0002FF481 /* AppFont.swift in Sources */,
+				4298B365245E1FF0002FF481 /* ViewModel.swift in Sources */,
+				4298B34E245E1FF0002FF481 /* SteamWebService.swift in Sources */,
+				4298B35D245E1FF0002FF481 /* Binding+Extension.swift in Sources */,
+				4298B366245E1FF0002FF481 /* ViewModelStateMachine.swift in Sources */,
+				4298B34D245E1FF0002FF481 /* SceneDelegate.swift in Sources */,
+				4298B362245E1FF0002FF481 /* ImageLoader.swift in Sources */,
+				4298B35B245E1FF0002FF481 /* EdgeInsets+Extensions.swift in Sources */,
+				4298B369245E1FF0002FF481 /* GameSearchView.swift in Sources */,
+				4298B359245E1FF0002FF481 /* SearchTextField.swift in Sources */,
+				4298B360245E1FF0002FF481 /* DataTaskPublisher+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4298B303245E1CDF002FF481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4298B382245E245F002FF481 /* GameSearchViewModelTests.swift in Sources */,
+				4298B385245E245F002FF481 /* SteamSearchItem+Fixture.swift in Sources */,
+				4298B383245E245F002FF481 /* MockSteamWebService.swift in Sources */,
+				4298B386245E245F002FF481 /* ViewModelTestCase.swift in Sources */,
+				4298B384245E245F002FF481 /* TestSubscriber+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4298B309245E1CDF002FF481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4298B2F0245E1CDB002FF481 /* SteamSearch */;
+			targetProxy = 4298B308245E1CDF002FF481 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4298B321245E1FF0002FF481 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4298B322245E1FF0002FF481 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4298B30E245E1CDF002FF481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4298B30F245E1CDF002FF481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4298B311245E1CDF002FF481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "SteamSearch/Resources/Preview\\ Content";
+				DEVELOPMENT_TEAM = 6GWPR4UH9P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SteamSearch/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Joshua.SteamSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4298B312245E1CDF002FF481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "SteamSearch/Resources/Preview\\ Content";
+				DEVELOPMENT_TEAM = 6GWPR4UH9P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SteamSearch/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Joshua.SteamSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4298B314245E1CDF002FF481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GWPR4UH9P;
+				INFOPLIST_FILE = "SteamSearchTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Joshua.SteamSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteamSearch.app/SteamSearch";
+			};
+			name = Debug;
+		};
+		4298B315245E1CDF002FF481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GWPR4UH9P;
+				INFOPLIST_FILE = "SteamSearchTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Joshua.SteamSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteamSearch.app/SteamSearch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4298B2EC245E1CDB002FF481 /* Build configuration list for PBXProject "SteamSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4298B30E245E1CDF002FF481 /* Debug */,
+				4298B30F245E1CDF002FF481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4298B310245E1CDF002FF481 /* Build configuration list for PBXNativeTarget "SteamSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4298B311245E1CDF002FF481 /* Debug */,
+				4298B312245E1CDF002FF481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4298B313245E1CDF002FF481 /* Build configuration list for PBXNativeTarget "SteamSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4298B314245E1CDF002FF481 /* Debug */,
+				4298B315245E1CDF002FF481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4298B36C245E211B002FF481 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.4.1;
+			};
+		};
+		4298B36F245E213B002FF481 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/piknotech/SFSafeSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		4298B372245E23D9002FF481 /* XCRemoteSwiftPackageReference "Entwine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tcldr/Entwine";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4298B36D245E211B002FF481 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4298B36C245E211B002FF481 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		4298B370245E213B002FF481 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4298B36F245E213B002FF481 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+		4298B373245E23DA002FF481 /* EntwineTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4298B372245E23D9002FF481 /* XCRemoteSwiftPackageReference "Entwine" */;
+			productName = EntwineTest;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4298B2E9245E1CDB002FF481 /* Project object */;
+}
