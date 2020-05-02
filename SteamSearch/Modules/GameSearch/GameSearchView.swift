@@ -97,8 +97,9 @@ private struct ResultItem: View {
     let item: SteamSearchItem
 
     var body: some View {
-        // There's some weird jumping here once the image has loaded, but I've only noticed it in the iPhone 11
-        // simulator but not on my smaller screened device. Maybe screen size related? Probably fixable...
+        // There's some weird jumping here once the image has loaded. It only seems to be noticable on the iPhone 11
+        // simulator (doesn't happen on my smaller screen physical device). Maybe screen size related?
+        // Probably fixable...
         HStack {
             RemoteImage(imageLoader: ImageLoader(url: item.image), showActivityIndicator: false)
                 .frame(width: 120, height: 45)

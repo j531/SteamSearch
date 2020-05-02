@@ -29,14 +29,17 @@ struct NetworkService {
             .verify()
             .data()
             .decode(type: T.self, decoder: JSONDecoder())
-            .mapError { error in
+            .mapError { error -> NetworkError in
                 switch error {
-                case let networkError as NetworkError:
-                    return networkError
+
+                case let error as NetworkError:
+                    return error
+
                 case _ as DecodingError:
-                    return NetworkError.decodingError
+                    return .decodingError
+
                 default:
-                    return NetworkError.unknown
+                    return .unknown
                 }
             }
             .eraseToAnyPublisher()

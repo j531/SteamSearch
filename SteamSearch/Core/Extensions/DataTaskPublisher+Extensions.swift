@@ -20,11 +20,8 @@ extension URLSession.DataTaskPublisher {
             }
             return (data, response)
         }
-        .mapError { error in
-            if let networkError = error as? NetworkError {
-                return networkError
-            }
-            return NetworkError.unknown
+        .mapError { error -> NetworkError in
+            (error as? NetworkError) ?? .unknown
         }
         .eraseToAnyPublisher()
     }
