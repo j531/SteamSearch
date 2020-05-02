@@ -14,7 +14,7 @@ class ViewModelStateMachine<State, Event, Task> {
     typealias Update = (_ state: inout State, _ event: Event) -> Task?
     typealias MakeSideEffect = (Task) -> SideEffect
 
-    let state: AnyPublisher<(State, Task?), Never>
+    let state: AnyPublisher<(State, Task?), Never> // Should be a "list" of tasks (equal on contents, not order)
     var currentState: (State, Task?) { stateSubject.value }
 
     private let update: Update

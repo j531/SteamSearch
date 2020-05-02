@@ -28,7 +28,6 @@ protocol ViewModelVerifying {
 }
 
 extension ViewModelVerifying {
-
     func verifyViewModel(
         viewModel: (TestScheduler) -> VM,
         run: (VM, TestScheduler) -> Void,
@@ -39,7 +38,6 @@ extension ViewModelVerifying {
 
         let stateSubscriber = scheduler.createTestableSubscriber((State, Task?).self, Never.self)
         viewModel.state.subscribe(stateSubscriber)
-        scheduler.resume()
 
         run(viewModel, scheduler)
         verify(stateSubscriber.recordedValues().map(StateSnapshot.init))

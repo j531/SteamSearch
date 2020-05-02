@@ -46,7 +46,7 @@
 		4298B383245E245F002FF481 /* MockSteamWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B377245E23FB002FF481 /* MockSteamWebService.swift */; };
 		4298B384245E245F002FF481 /* TestSubscriber+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B379245E23FB002FF481 /* TestSubscriber+Extensions.swift */; };
 		4298B385245E245F002FF481 /* SteamSearchItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B37B245E23FB002FF481 /* SteamSearchItem+Fixture.swift */; };
-		4298B386245E245F002FF481 /* ViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B37D245E23FB002FF481 /* ViewModelTestCase.swift */; };
+		4298B386245E245F002FF481 /* ViewModelVerifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298B37D245E23FB002FF481 /* ViewModelVerifying.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +98,7 @@
 		4298B377245E23FB002FF481 /* MockSteamWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSteamWebService.swift; sourceTree = "<group>"; };
 		4298B379245E23FB002FF481 /* TestSubscriber+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestSubscriber+Extensions.swift"; sourceTree = "<group>"; };
 		4298B37B245E23FB002FF481 /* SteamSearchItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SteamSearchItem+Fixture.swift"; sourceTree = "<group>"; };
-		4298B37D245E23FB002FF481 /* ViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTestCase.swift; sourceTree = "<group>"; };
+		4298B37D245E23FB002FF481 /* ViewModelVerifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelVerifying.swift; sourceTree = "<group>"; };
 		4298B37F245E23FB002FF481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4298B381245E23FB002FF481 /* GameSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSearchViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -382,7 +382,7 @@
 		4298B37C245E23FB002FF481 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4298B37D245E23FB002FF481 /* ViewModelTestCase.swift */,
+				4298B37D245E23FB002FF481 /* ViewModelVerifying.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -555,7 +555,7 @@
 				4298B382245E245F002FF481 /* GameSearchViewModelTests.swift in Sources */,
 				4298B385245E245F002FF481 /* SteamSearchItem+Fixture.swift in Sources */,
 				4298B383245E245F002FF481 /* MockSteamWebService.swift in Sources */,
-				4298B386245E245F002FF481 /* ViewModelTestCase.swift in Sources */,
+				4298B386245E245F002FF481 /* ViewModelVerifying.swift in Sources */,
 				4298B384245E245F002FF481 /* TestSubscriber+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

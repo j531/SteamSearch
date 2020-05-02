@@ -28,6 +28,7 @@ class GameSearchViewModelTests: XCTestCase, ViewModelVerifying {
                 )
         },
             run: { viewModel, scheduler in
+                scheduler.resume()
                 webService.stubbedSearchResult = makeResultsPublisher(for: itemFixtures)
                 viewModel.send(.didChangeSearchTerm(searchTerm))
                 scheduler.resume()
