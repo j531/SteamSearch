@@ -10,8 +10,8 @@ import Foundation
 import Combine
 
 class GameSearchViewModel: ViewModel {
-    var state: AnyPublisher<State, Never> { stateMachine.state }
-    var currentState: State { stateMachine.currentState }
+    var state: AnyPublisher<(State, Task?), Never> { stateMachine.state }
+    var currentState: (State, Task?) { stateMachine.currentState }
 
     private typealias StateMachine = ViewModelStateMachine<State, Event, Task>
 
@@ -123,7 +123,7 @@ extension GameSearchViewModel {
         var searchTerm = ""
     }
 
-    enum Status {
+    enum Status: Equatable {
         case loaded([SteamSearchItem])
         case failed(NetworkError)
         case loading
@@ -141,27 +141,8 @@ extension GameSearchViewModel {
         case didChangeSearchTerm(String)
     }
 
-    enum Task {
+    enum Task: Equatable {
         case search(term: String)
         case delayedSearch(term: String)
-    }
-}
-
-extension GameSearchViewModel.Status: Equatable {
-    static func == (lhs: GameSearchViewModel.Status, rhs: GameSearchViewModel.Status) -> Bool {
-        switch (lhs, rhs) {
-
-        case let (.loaded(lhsItems), .loaded(rhsItems)):
-            return lhsItems == rhsItems
-
-        case let (.failed(lhsError), .failed(rhsError)):
-            return lhsError == rhsError
-
-        case (.loading, .loading):
-            return true
-
-        default:
-            return false
-        }
     }
 }

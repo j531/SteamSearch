@@ -11,25 +11,37 @@ import Combine
 import EntwineTest
 @testable import SteamSearch
 
+struct StateSnapshot<State: Equatable, Task: Equatable>: Equatable {
+    let state: State
+    let task: Task?
+
+    init(_ state: State, _ task: Task? = nil) {
+        self.state = state
+        self.task = task
+    }
+}
+
 protocol ViewModelVerifying {
-    associatedtype VM: ViewModel
+    associatedtype VM: ViewModel where VM.State: Equatable, VM.Task: Equatable
     typealias State = VM.State
+    typealias Task = VM.Task
 }
 
 extension ViewModelVerifying {
+
     func verifyViewModel(
         viewModel: (TestScheduler) -> VM,
         run: (VM, TestScheduler) -> Void,
-        verify: ([VM.State]) -> Void
+        verify: ([StateSnapshot<State, Task>]) -> Void
     ) {
         let scheduler = TestScheduler()
         let viewModel = viewModel(scheduler)
 
-        let stateSubscriber = scheduler.createTestableSubscriber(VM.State.self, Never.self)
+        let stateSubscriber = scheduler.createTestableSubscriber((State, Task?).self, Never.self)
         viewModel.state.subscribe(stateSubscriber)
         scheduler.resume()
-        
+
         run(viewModel, scheduler)
-        verify(stateSubscriber.recordedValues())
+        verify(stateSubscriber.recordedValues().map(StateSnapshot.init))
     }
 }

@@ -12,9 +12,10 @@ import Combine
 protocol ViewModel {
     associatedtype State
     associatedtype UserInput
+    associatedtype Task
 
-    var state: AnyPublisher<State, Never> { get }
-    var currentState: State { get }
+    var state: AnyPublisher<(State, Task?), Never> { get }
+    var currentState: (State, Task?) { get }
 
     func send(_ input: UserInput)
 }

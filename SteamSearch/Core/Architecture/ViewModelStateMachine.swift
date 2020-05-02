@@ -14,13 +14,13 @@ class ViewModelStateMachine<State, Event, Task> {
     typealias Update = (_ state: inout State, _ event: Event) -> Task?
     typealias MakeSideEffect = (Task) -> SideEffect
 
-    let state: AnyPublisher<State, Never>
-    var currentState: State { stateSubject.value }
+    let state: AnyPublisher<(State, Task?), Never>
+    var currentState: (State, Task?) { stateSubject.value }
 
     private let update: Update
     private let sideEffect: MakeSideEffect?
 
-    private let stateSubject: CurrentValueSubject<State, Never>
+    private let stateSubject: CurrentValueSubject<(State, Task?), Never>
     private let events = PassthroughSubject<Event, Never>()
 
     private var cancellables = Set<AnyCancellable>()
@@ -39,7 +39,7 @@ class ViewModelStateMachine<State, Event, Task> {
         update: @escaping Update,
         sideEffect: MakeSideEffect? = nil
     ) {
-        self.stateSubject = CurrentValueSubject(initial)
+        self.stateSubject = CurrentValueSubject((initial, nil))
         self.state = stateSubject.eraseToAnyPublisher()
         self.update = update
         self.sideEffect = sideEffect
@@ -58,9 +58,14 @@ class ViewModelStateMachine<State, Event, Task> {
         events.receive(on: scheduler)
             .sink { [weak self] event in
                 guard let self = self else { return }
-                self.update(&self.stateSubject.value, event)
-                    .flatMap { task in self.sideEffect?(task) }
-                    .map(self.handle)
+                var state = self.stateSubject.value.0
+                let task = self.update(&state, event)
+
+                if let task = task, let sideEffect = self.sideEffect?(task) {
+                    self.handle(sideEffect)
+                }
+
+                self.stateSubject.value = (state, task)
         }
         .store(in: &cancellables)
     }

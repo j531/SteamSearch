@@ -32,17 +32,17 @@ class GameSearchViewModelTests: XCTestCase, ViewModelVerifying {
                 viewModel.send(.didChangeSearchTerm(searchTerm))
                 scheduler.resume()
         },
-            verify: { states in
+            verify: { snapshots in
                 XCTAssertEqual(
-                    states,
+                    snapshots,
                     [
-                        State(status: .loaded([]), searchTerm: ""),
-                        State(status: .loading, searchTerm: ""),
-                        State(status: .loading, searchTerm: ""),
-                        State(status: .loaded([]), searchTerm: ""),
-                        State(status: .loaded([]), searchTerm: searchTerm),
-                        State(status: .loading, searchTerm: searchTerm),
-                        State(status: .loaded(itemFixtures), searchTerm: searchTerm),
+                        .init(State(status: .loaded([]), searchTerm: "")),
+                        .init(State(status: .loading, searchTerm: ""), .search(term: "")),
+                        .init(State(status: .loading, searchTerm: "")),
+                        .init(State(status: .loaded([]), searchTerm: "")),
+                        .init(State(status: .loaded([]), searchTerm: searchTerm), .delayedSearch(term: searchTerm)),
+                        .init(State(status: .loading, searchTerm: searchTerm)),
+                        .init(State(status: .loaded(itemFixtures), searchTerm: searchTerm))
                     ]
                 )
         })

@@ -17,12 +17,12 @@ class ViewContext<VM: ViewModel>: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
 
     init(viewModel: VM) {
-        state = viewModel.currentState
+        state = viewModel.currentState.0
         self.viewModel = viewModel
 
         viewModel.state.sink { [weak self] newState in
             guard let self = self else { return }
-            self.state = newState
+            self.state = newState.0
         }
         .store(in: &cancellables)
     }
