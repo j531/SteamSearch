@@ -27,6 +27,7 @@ extension ViewModelVerifying {
 
         let stateSubscriber = scheduler.createTestableSubscriber(VM.State.self, Never.self)
         viewModel.state.subscribe(stateSubscriber)
+        scheduler.resume()
         
         run(viewModel, scheduler)
         verify(stateSubscriber.recordedValues())
