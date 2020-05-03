@@ -14,6 +14,7 @@ class ViewModelStateMachine<State, Event, Task> {
     typealias Update = (_ state: inout State, _ event: Event) -> Task?
     typealias MakeSideEffect = (Task) -> SideEffect
 
+    // Remove Task from here? Is it really the current state?
     let state: AnyPublisher<(State, Task?), Never> // Should be a "list" of tasks (equal on contents, not order)
     var currentState: (State, Task?) { stateSubject.value }
 
